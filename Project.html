@@ -12,7 +12,6 @@
       --text-primary: #0f172a;
       --text-secondary: #475569;
       
-      /* Multi-color Palette */
       --indigo: #4f46e5;
       --indigo-soft: #eef2ff;
       --indigo-border: #c7d2fe;
@@ -59,7 +58,6 @@
       min-height: 100vh;
     }
 
-    /* Sticky Top Header Navigation */
     .top-header {
       position: sticky;
       top: 0;
@@ -96,11 +94,11 @@
       align-items: center;
       gap: 0.45rem;
       overflow-x: auto;
-      scrollbar-width: none; /* Firefox */
+      scrollbar-width: none; 
     }
 
     .nav-links::-webkit-scrollbar {
-      display: none; /* Chrome/Safari */
+      display: none;
     }
 
     .nav-links a {
@@ -129,7 +127,6 @@
       color: #ffffff;
     }
 
-    /* Main Content Container */
     .container {
       max-width: 820px;
       margin: 0 auto;
@@ -139,7 +136,6 @@
       gap: 1.5rem;
     }
 
-    /* Card Base Styling */
     .card {
       background-color: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -164,7 +160,6 @@
       border-bottom: 2px solid #f1f5f9;
     }
 
-    /* Section-Specific Colorful Accents */
     .sec-about { border-top: 4px solid var(--indigo); }
     .sec-about h2 { color: var(--indigo); border-bottom-color: var(--indigo-soft); }
 
@@ -186,7 +181,7 @@
     .sec-contact { border-top: 4px solid var(--indigo); }
     .sec-contact h2 { color: var(--indigo); border-bottom-color: var(--indigo-soft); }
 
-    /* 1. Profile Hero Card */
+    
     .profile-header {
       display: flex;
       align-items: center;
@@ -245,13 +240,11 @@
       margin-top: 0.5rem;
     }
 
-    /* 2. About */
     .about-text {
       color: var(--text-secondary);
       font-size: 1rem;
     }
 
-    /* 3 & 5. Timeline Items (Education & Volunteering) */
     .item-list {
       display: flex;
       flex-direction: column;
@@ -353,7 +346,6 @@
       background-color: #b45309;
     }
 
-    /* 6. Technical Skills (Multi-colored categories) */
     .skills-grid {
       display: flex;
       flex-direction: column;
@@ -398,7 +390,6 @@
       border: 1px solid var(--violet-border);
     }
 
-    /* 7. Professional Profiles */
     .profiles-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -451,7 +442,6 @@
       transform: translateY(-2px);
     }
 
-    /* 8. Contact Me */
     .contact-box {
       display: flex;
       flex-direction: column;
@@ -485,7 +475,6 @@
       transform: translateY(-2px);
     }
 
-    /* Responsive Mobile Adjustments */
     @media (max-width: 600px) {
       .nav-container {
         flex-direction: column;
@@ -544,7 +533,6 @@
 </head>
 <body>
 
-  <!-- Sticky Navigation Header -->
   <header class="top-header">
     <nav class="nav-container">
       <a href="#top" class="nav-brand">Diganth B S</a>
@@ -562,7 +550,6 @@
 
   <main id="top" class="container">
 
-    <!-- 1. Profile Photo (Left) & Name -->
     <section class="card profile-header">
       <div class="photo-ring">
         <img 
@@ -579,7 +566,6 @@
       </div>
     </section>
 
-    <!-- 2. About Section -->
     <section id="about" class="card sec-about">
       <h2>About</h2>
       <p class="about-text">
@@ -587,7 +573,6 @@
       </p>
     </section>
 
-    <!-- 3. Education Section -->
     <section id="education" class="card sec-edu">
       <h2>Education</h2>
       <div class="item-list">
@@ -610,7 +595,6 @@
       </div>
     </section>
 
-    <!-- 4. Certificates Section -->
     <section id="certificates" class="card sec-cert">
       <h2>Certificates</h2>
       <div class="cert-list">
@@ -633,7 +617,6 @@
         </div>
     </section>
 
-    <!-- 6. Technical Skills -->
     <section id="skills" class="card sec-skills">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
@@ -661,7 +644,6 @@
        </div>
     </section>
 
-    <!-- 7. Other Professional Profiles -->
     <section id="profiles" class="card sec-profiles">
       <h2>Profiles & Links</h2>
       <div class="profiles-grid">
@@ -679,7 +661,6 @@
       </div>
     </section>
 
-    <!-- 8. Contact Me -->
     <section id="contact" class="card sec-contact">
       <h2>Contact Me</h2>
       <div class="contact-box">
